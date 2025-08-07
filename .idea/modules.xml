@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/backend/patient-service/src/main/main.iml" filepath="$PROJECT_DIR$/backend/patient-service/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/billing-service/src/main/main2.iml" filepath="$PROJECT_DIR$/backend/billing-service/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/patient-management.iml" filepath="$PROJECT_DIR$/.idea/patient-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/patient-service/target/target.iml" filepath="$PROJECT_DIR$/backend/patient-service/target/target.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/billing-service/target/target2.iml" filepath="$PROJECT_DIR$/backend/billing-service/target/target2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/billing-service/src/test/test.iml" filepath="$PROJECT_DIR$/backend/billing-service/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/patient-service/src/test/test2.iml" filepath="$PROJECT_DIR$/backend/patient-service/src/test/test2.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,12 @@
+### Updates an existing patient entity
+PUT http://localhost:4000/patients/7a6c0a38-6922-4d46-8fde-f6f52be5660d
+Content-Type: application/json
+
+{
+  "name": "Happy Singh Sodhi",
+  "email": "happy.singh@bharatmail.in",
+  "address": "202 BRS Nagar, Ludhiana, Punjab - 141012",
+  "dateOfBirth": "1994-01-26"
+}
+
+###
