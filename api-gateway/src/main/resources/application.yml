@@ -1,0 +1,24 @@
+server:
+  port: 4004
+
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: patient-service
+              uri: http://patient-service:4000
+              predicates:
+                - Path=/api/patients/**
+              filters:
+                - StripPrefix=1
+
+
+            - id: auth-service
+              uri: http://auth-service:4005
+              predicates:
+                - Path=/auth/**
+
+jwt:
+  secret: "u8uPe5X9hQfT2vLmWzA7sC0yRbNdK3pX"

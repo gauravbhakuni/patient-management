@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  patient-service:
+    image: patient-service:latest
+    ports:
+      - "4000:4000"
+    depends_on:
+      - patient-service-db
+      - billing-service
+
+  patient-service-db:
+    image: postgres:latest
+    ports:
+      - "5000:5432"
+    volumes:
+      - "D:/Gaurav Bhakuni/IdeaProjects/db-volumes/patient-service-db:/var/lib/postgresql/data"
+
+  billing-service:
+    image: billing-service:latest
+    ports:
+      - "4001:4001"
+      - "9001:9001"
+
+#  web-client:
+#    build:
+#      context: ./web-client
+#      dockerfile: Dockerfile
+#    container_name: web-client
+#    ports:
+#      - "3000:80"

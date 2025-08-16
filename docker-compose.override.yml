@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  web-client:
+    build:
+      context: ./web-client
+      dockerfile: Dockerfile.dev
+    container_name: web-client
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./web-client:/app          # Mount your code
+      - /app/node_modules          # Keep container's node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true   # Ensures file watching inside Docker works
+    command: npm start
